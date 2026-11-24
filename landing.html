@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Gratuito: 10 Destinos para Viajar Gastando Menos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lp-body">
+    <main class="lp-container">
+        <section class="lp-hero">
+            <span class="badge">GUIA GRATUITO</span>
+            <h1>Conheça o Mundo Gastando Muito Menos</h1>
+            <p class="subtitle">Descubra destinos incríveis, aprenda a encontrar passagens baratas e monte um roteiro completo sem dor de cabeça.</p>
+
+            <ul class="benefits">
+                <li>✅ 10 destinos com roteiro e orçamento</li>
+                <li>✅ Checklist completo de viagem</li>
+                <li>✅ Truques para passagens e hospedagem</li>
+            </ul>
+        </section>
+
+        <section class="lp-form-box">
+            <h2>Para onde devemos enviar o guia?</h2>
+            <form id="leadForm" novalidate>
+                <div class="input-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" placeholder="Ex: Maria Souza" required>
+                    <small class="error-msg" id="erroNome"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Melhor E-mail *</label>
+                    <input type="email" id="email" placeholder="Ex: maria@email.com" required>
+                    <small class="error-msg" id="erroEmail"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="whatsapp">WhatsApp *</label>
+                    <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" maxlength="15" required>
+                    <small class="error-msg" id="erroWhats"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="destino">Próximo destino dos sonhos</label>
+                    <select id="destino">
+                        <option value="">Selecione (opcional)</option>
+                        <option>Praias do Brasil</option>
+                        <option>Europa</option>
+                        <option>América do Sul</option>
+                        <option>Estados Unidos</option>
+                        <option>Ásia</option>
+                    </select>
+                </div>
+
+                <!-- Campo oculto para guardar de qual anúncio o lead veio -->
+                <input type="hidden" id="origemLead" name="origem">
+
+                <button type="submit" class="btn-submit">BAIXAR GUIA AGORA</button>
+                <p class="privacy-note">🔒 Seus dados estão seguros. Livre de spam.</p>
+            </form>
+
+            <!-- Mensagem de Sucesso (Oculta inicialmente) -->
+            <div id="successBox" class="success-box hidden">
+                <h3>🎉 Boa viagem, <span id="userNameSuccess"></span>!</h3>
+                <p>Enviamos o Guia para o seu e-mail. Verifique sua caixa de entrada ou spam.</p>
+                <a href="index.html" class="btn-back">← Voltar ao Portal</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
